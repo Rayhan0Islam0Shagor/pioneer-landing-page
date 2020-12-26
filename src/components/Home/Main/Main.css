@@ -1,0 +1,16 @@
+.service{
+   padding-bottom: 150px;
+   position: relative;
+}
+
+.styled-div{
+    background-image: url('../../icons_&_images/Object.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 70%;
+}

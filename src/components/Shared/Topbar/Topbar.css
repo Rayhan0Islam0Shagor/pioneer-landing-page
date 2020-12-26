@@ -1,0 +1,9 @@
+.active{
+    background-color: #363636;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.link-style{
+    color: #707070 !important;
+}
