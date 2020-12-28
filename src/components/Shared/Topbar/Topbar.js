@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../icons_&_images/AiS-Logo--Right-Side-(Solid-Ash).png';
-import searchIcon from '../../icons_&_images/Layer 4.png';
-import cartIcon from '../../icons_&_images/Layer 5.png';
-import optionIcon from '../../icons_&_images/Ellipse 1.png';
 import './Topbar.css';
+import { IconButton } from '@material-ui/core';
+import AppsIcon from '@material-ui/icons/Apps';
+import SearchIcon from '@material-ui/icons/Search';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 const Topbar = () => {
     return (
@@ -20,7 +21,7 @@ const Topbar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
+                            <li className="nav-item">
                                 <NavLink activeClassName="active" className="nav-link" to="/">HOME</NavLink>
                             </li>
                             <li className="nav-item">
@@ -36,17 +37,23 @@ const Topbar = () => {
                         <div className="row ml-5">
                             <div className="col">
                                 <Link to="/search">
-                                    <img height="42px" width="47px" src={searchIcon} alt="" />
+                                    <IconButton>
+                                        <SearchIcon style={{ color: "#363636" }} />
+                                    </IconButton>
                                 </Link>
                             </div>
                             <div className="col">
                                 <Link to="/cart">
-                                    <img height="35px" width="40px" src={cartIcon} alt="" />
+                                    <IconButton>
+                                        <AddShoppingCartIcon style={{ color: "#363636" }} />
+                                    </IconButton>
                                 </Link>
                             </div>
                             <div className="col">
                                 <Link to="/more">
-                                    <img height="35px" width="40px" src={optionIcon} alt="" />
+                                    <IconButton>
+                                        <AppsIcon style={{ color: "#363636" }} />
+                                    </IconButton>
                                 </Link>
                             </div>
                         </div>

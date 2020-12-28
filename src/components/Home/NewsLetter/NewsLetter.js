@@ -1,6 +1,9 @@
 import React from 'react';
 
 const NewsLetter = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
     return (
         <div className="container" style={{ height: "400px", padding: "50px 0px" }}>
             <div className="row subscribe-sec d-flex align-items-center h-100">
@@ -11,15 +14,15 @@ const NewsLetter = () => {
                 </p>
                 </div>
                 <div className="col-md-6 col-sm-12">
-                    <div className="d-flex justify-content-between formData">
+                    <form onSubmit={handleSubmit} className="d-flex justify-content-between formData">
                         <input
                             placeholder="Enter your mail address"
                             className="form-control py-4"
                             type="email"
-
+                            required
                         />
-                        <button className="btn btn-secondary text-uppercase text-light">Subscribe</button>
-                    </div>
+                        <button type="submit" className="btn btn-secondary text-uppercase text-light">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>

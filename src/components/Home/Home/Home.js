@@ -8,6 +8,7 @@ import messenger from '../../icons_&_images/messenger.png';
 import Main from '../Main/Main';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from '../../Shared/Footer/Footer';
+import { IconButton } from '@material-ui/core';
 
 const Home = () => {
     return (
@@ -18,10 +19,14 @@ const Home = () => {
                 <Header />
             </div>
 
-            <div className="d-flex pt-5 pb-5">
+            <div className="d-flex pt-4 pb-5">
                 <About />
                 <div className="d-flex justify-content-end mt-auto">
-                    <a target="_blank" href="/facebook.com"><img height="63px" width="63px" src={messenger} alt="" /></a>
+                    <a href="https://www.facebook.com/pioneer.alpha.ltd/">
+                        <IconButton>
+                            <img height="63px" width="63px" src={messenger} alt="" />
+                        </IconButton>
+                    </a>
                 </div>
             </div>
 
@@ -38,7 +43,7 @@ const Home = () => {
             <div style={{ backgroundColor: "#EBEBEB" }}>
                 <Footer />
                 <div className="bg-dark text-center pt-1 pb-4">
-                    <a className="text-light link-unstyle text-decoration-none" href="#">www.amariSchool.com</a>
+                    <a className="text-light link-unstyle text-decoration-none" href="https://www.amariSchool.com">www.amariSchool.com</a>
                 </div>
             </div>
         </div>

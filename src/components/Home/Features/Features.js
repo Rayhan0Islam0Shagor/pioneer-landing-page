@@ -24,7 +24,11 @@ const Features = () => {
                                 overFlow: "hidden",
                                 border: "1px solid gray"
                             }}>
-                                <img height="100%" width="100%" src={logoOne} className="card-img-top" alt="..." />
+                                <img height="70%"
+                                    width="100%"
+                                    src={logoOne}
+                                    lassName="card-img-top mt-2" alt="..."
+                                />
                             </div>
                             <div className="card-body"
                                 style={{ marginTop: "100px" }}>
@@ -36,19 +40,12 @@ const Features = () => {
                     </div>
                     <div className="col-md-3" style={{ width: "350px" }}>
                         <div className="card style-card">
-                            <div style={{
-                                width: "120px",
-                                position: "absolute",
-                                top: "-60px",
-                                left: "25%",
-                                padding: "20px",
-                                backgroundColor: "white",
-                                height: "120px",
-                                borderRadius: "50%",
-                                overFlow: "hidden",
-                                border: "1px solid gray"
-                            }}>
-                                <img height="70px" width="40px" src={logoTwo} className="card-img-top" alt="..." />
+                            <div className="brand-card">
+                                <img height="80px"
+                                    src={logoTwo}
+                                    className="card-img-top"
+                                    alt="..."
+                                />
                             </div>
                             <div className="card-body"
                                 style={{ marginTop: "100px" }}>
@@ -60,19 +57,12 @@ const Features = () => {
                     </div>
                     <div className="col-md-3" style={{ width: "350px" }}>
                         <div className="card style-card">
-                            <div style={{
-                                width: "120px",
-                                position: "absolute",
-                                top: "-60px",
-                                left: "25%",
-                                padding: "20px",
-                                backgroundColor: "white",
-                                height: "120px",
-                                borderRadius: "50%",
-                                overFlow: "hidden",
-                                border: "1px solid gray"
-                            }}>
-                                <img height="100%" width="100%" src={logoThree} className="card-img-top" alt="..." />
+                            <div className="brand-card">
+                                <img height="100%"
+                                    width="100%"
+                                    src={logoThree}
+                                    className="card-img-top" alt="..."
+                                />
                             </div>
                             <div className="card-body"
                                 style={{ marginTop: "100px" }}>
